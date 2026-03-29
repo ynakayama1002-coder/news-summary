@@ -1,37 +1,29 @@
-Based on the search results, I now have enough information to create the HTML news summary page. Let me compile this into a complete HTML document.
+æ¤ç´¢çµæãåºã«ãæ¥çµã»èª­å£²ã»æ¯æ¥ã®ä¸»è¦ãã¥ã¼ã¹ãæ´çãã¦HTMLãçæãã¾ãã
 
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ä¸»è¦ãã¥ã¼ã¹ã¾ã¨ã - 2026å¹´3æ29æ¥</title>
+    <title>ä¸»è¦ãã¥ã¼ã¹ã¾ã¨ã - 2026å¹´3æ29æ¥ï¼æ¥ï¼</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        nikkei: '#003366',
-                        yomiuri: '#cc0000',
-                        mainichi: '#004d26'
-                    }
-                }
-            }
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
         }
-    </script>
+    </style>
 </head>
 <body class="bg-gray-50 min-h-screen">
-    <!-- Header -->
-    <header class="bg-gradient-to-r from-slate-800 to-slate-900 text-white py-6 shadow-lg">
+    <!-- ãããã¼ -->
+    <header class="gradient-bg text-white py-6 shadow-lg">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between flex-wrap gap-4">
                 <div class="flex items-center gap-3">
                     <i data-lucide="newspaper" class="w-8 h-8"></i>
                     <div>
                         <h1 class="text-2xl md:text-3xl font-bold">ä¸»è¦ãã¥ã¼ã¹ã¾ã¨ã</h1>
-                        <p class="text-slate-300 text-sm">æ¥çµã»èª­å£²ã»æ¯æ¥æ°è</p>
+                        <p class="text-blue-200 text-sm">æ¥çµã»èª­å£²ã»æ¯æ¥æ°è</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg">
@@ -43,362 +35,330 @@ Based on the search results, I now have enough information to create the HTML ne
     </header>
 
     <main class="container mx-auto px-4 py-8">
-        <!-- News Topic 1: Iran Situation -->
-        <section class="mb-12">
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
-                <div class="bg-gradient-to-r from-red-600 to-orange-500 px-6 py-4">
-                    <div class="flex items-center gap-3">
-                        <i data-lucide="alert-triangle" class="w-6 h-6 text-white"></i>
-                        <h2 class="text-xl md:text-2xl font-bold text-white">ç±³å½ã»ã¤ã¹ã©ã¨ã«ã«ããã¤ã©ã³æ»æã¨ãã«ã ãºæµ·å³¡å°é</h2>
+        <!-- ãããã¯1: ã¤ã©ã³æå¢ã»ãã«ã ãºæµ·å³¡å±æ© -->
+        <section class="bg-white rounded-xl shadow-lg mb-8 overflow-hidden">
+            <div class="bg-red-600 text-white px-6 py-4 flex items-center gap-3">
+                <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+                <h2 class="text-xl font-bold">ãå½éã»çµæ¸ãã¤ã©ã³æå¢ã¨ãã«ã ãºæµ·å³¡å±æ©</h2>
+                <span class="ml-auto bg-white/20 px-3 py-1 rounded-full text-sm">å±éãã¼ã</span>
+            </div>
+            
+            <div class="p-6">
+                <!-- 4é ç®æ´ç -->
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-blue-50 rounded-lg p-5 border-l-4 border-blue-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-blue-600"></i>
+                            <h3 class="font-bold text-blue-800">ä½ãèµ·ããã</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            2æ28æ¥ã«ç±³å½ã¨ã¤ã¹ã©ã¨ã«ãã¤ã©ã³ãæ»æãã¤ã©ã³æé«æå°èãã¡ãã¤å¸«ãæ­»äº¡ããã¨ãããã¤ã©ã³ã¯å ±å¾©ã¨ãã¦ãã«ã ãºæµ·å³¡ãäºå®ä¸å°éãä¸çã®åæ²¹æµ·ä¸è²¿æéã®ç´25%ãééããè¦è¡ã4é±éã«ãããæ©è½åæ­¢ç¶æã«ãG7å¤ç¸ä¼åã§ãèªè¡ã®èªç±ãã®å¿è¦æ§ãç¢ºèªããå±åå£°æãçºè¡¨ã
+                        </p>
                     </div>
-                    <p class="text-red-100 mt-1 text-sm">ãå±éãã¼ããæ¥çµã»èª­å£²ã»æ¯æ¥</p>
+                    
+                    <div class="bg-yellow-50 rounded-lg p-5 border-l-4 border-yellow-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="lightbulb" class="w-5 h-5 text-yellow-600"></i>
+                            <h3 class="font-bold text-yellow-800">ãªãèµ·ããã</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            ãã©ã³ãæ¿æ¨©ã¯11æã®ä¸­éé¸æãè¦æ®ããã¤ã©ã³ã®æ ¸éçºé»æ­¢ãæ²ãã¦è»äºè¡åãå®æ½ãã¤ã©ã³å´ã¯æé«æå°èã®æ­»äº¡ã«å¯¾ããå ±å¾©ã¨ãã¦æµ·å³¡å°éãå®£è¨ãæ°æé«æå°èã¢ã¸ã¿ãã»ãã¡ãã¤å¸«ãå°éç¶ç¶ãè¡¨æã
+                        </p>
+                    </div>
+                    
+                    <div class="bg-green-50 rounded-lg p-5 border-l-4 border-green-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="users" class="w-5 h-5 text-green-600"></i>
+                            <h3 class="font-bold text-green-800">èª°ã«å½±é¿ãããã</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            <strong>æ¥æ¬å½æ°ï¼</strong>åæ²¹ã®9å²ãä¸­æ±ã«ä¾å­ãã¦ãããã¬ã½ãªã³ã»é»æ°æéã®ä¸æã«ç´é¢ããã©ãã¯ã»ãã¹äºæ¥­èã¯è»½æ²¹èª¿éå°é£ã«ã<br>
+                            <strong>ä¸çåå½ï¼</strong>ã°ã­ã¼ãã«ãµã¦ã¹ï¼æ°èã»éä¸å½ï¼ã¯ãä¸çå´©å£ããå±æ§ãç±³å½ãæ¹å¤ã
+                        </p>
+                    </div>
+                    
+                    <div class="bg-purple-50 rounded-lg p-5 border-l-4 border-purple-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="briefcase" class="w-5 h-5 text-purple-600"></i>
+                            <h3 class="font-bold text-purple-800">ãã¸ãã¹ã¸ã®å½±é¿</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            åæ²¹ä¾¡æ ¼ã60ãã«å°å¾åãã105ãã«ã«æ¥é¨°ãææªã·ããªãªã§ã¯140ãã«ã¾ã§ä¸æã®äºæ¸¬ããæ¥æ¬ã®å®è³ªGDPã¯0.3%ç¨åº¦æ¼ãä¸ããããå¯è½æ§ãç³æ²¹åå£²åç¤¾ã¯ä»£æ¿èª¿éãæ¥ãããæ¥æ¬ã¸ã®å°çã¯6æä»¥éã®è¦éããæ¿åºã¯ç³æ²¹åè30æ¥åã®æ¾åºãéå§ã
+                        </p>
+                    </div>
                 </div>
-                
-                <div class="p-6">
-                    <!-- 4 Points Analysis -->
-                    <div class="grid md:grid-cols-2 gap-6 mb-8">
-                        <div class="bg-blue-50 rounded-xl p-5 border-l-4 border-blue-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="help-circle" class="w-5 h-5 text-blue-600"></i>
-                                <h3 class="font-bold text-blue-800">ä½ãèµ·ããã</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                2026å¹´2æ28æ¥ãç±³å½ã¨ã¤ã¹ã©ã¨ã«ãã¤ã©ã³ã«å¯¾ãã¦å¤§è¦æ¨¡è»äºæ»æãå®æ½ã
-                                ã¤ã©ã³ã®æé«æå°èãã¡ãã¤å¸«ãæ­»äº¡ããã¤ã©ã³ã¯å ±å¾©ã¨ãã¦<span class="font-semibold">ãã«ã ãºæµ·å³¡ãäºå®ä¸å°é</span>ã
-                                æ¥æ¬ã®æµ·éå¤§æ3ç¤¾ï¼æ¥æ¬éµè¹ã»åè¹ä¸äºã»å·å´æ±½è¹ï¼ãèªè¡ãåæ­¢ãã¦ããã
-                            </p>
-                        </div>
-                        
-                        <div class="bg-amber-50 rounded-xl p-5 border-l-4 border-amber-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="lightbulb" class="w-5 h-5 text-amber-600"></i>
-                                <h3 class="font-bold text-amber-800">ãªãèµ·ããã</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                ä¸»ãªè¦å ã¯3ã¤ï¼â ã¤ã©ã³ã®æ ¸éçºåé¡ï¼IAEAæ»å¯å¶éã®å¶åº¦åï¼ã
-                                â¡ä¸­æ±å°åã®è¦æ¨©ç«¶äºï¼ããºãã©ã»ãã¼ã·æ´¾ç­ã®ä»£çå¢åã¸ã®æ¯æ´ï¼ã
-                                â¢ãã©ã³ãæ¿æ¨©ã®ãåã«ããå¹³åãæ¦ç¥ãã¤ã©ã³å½åã®åä½å¶ãã¢ï¼ç´3ä¸äººæ­»äº¡ã¨ã®å ±éï¼ãæ»æã®å£å®ã¨ãªã£ãã
-                            </p>
-                        </div>
-                        
-                        <div class="bg-green-50 rounded-xl p-5 border-l-4 border-green-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="users" class="w-5 h-5 text-green-600"></i>
-                                <h3 class="font-bold text-green-800">èª°ã«å½±é¿ãããã</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                <span class="font-semibold">æ¥æ¬ã¯æãæ·±å»ãªå½±é¿</span>ãåããå½ã®ä¸ã¤ã
-                                åæ²¹è¼¸å¥ã®ç´9å²ãä¸­æ±ã«ä¾å­ãã8å²åå¾ããã«ã ãºæµ·å³¡ãééã
-                                ã¾ããæ¹¾å²¸è«¸å½ãä¸­å½ãéå½ãæ¬§å·è«¸å½ã®ã¨ãã«ã®ã¼ä¾çµ¦ã«ãææã
-                                ãã«ã·ã£æ¹¾åã«ã¯æ¥æ¬é¢ä¿è¹è¶44é»ãæ®çãã¦ããç¶æ³ã
-                            </p>
-                        </div>
-                        
-                        <div class="bg-purple-50 rounded-xl p-5 border-l-4 border-purple-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="trending-up" class="w-5 h-5 text-purple-600"></i>
-                                <h3 class="font-bold text-purple-800">ãã¸ãã¹ã¸ã®å½±é¿</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                åæ²¹ä¾¡æ ¼æ¥é¨°ã«ããã¬ã½ãªã³ã»ç©æµã³ã¹ãä¸æãã¤ã³ãã¬å éã®æ¸å¿µã
-                                æ¥çµå¹³åæ ªä¾¡ã¯3æ4æ¥ã«åæ¥æ¯â²3.6%ã®å¤§å¹ä¸è½ã
-                                ææªã·ããªãªã§ã¯<span class="font-semibold">1ãã«200åã®è¶åå®</span>ãäºæ¸¬ãããã
-                                æ¿åºã¯ç³æ²¹å½å®¶åè30æ¥åï¼ç´5,300ä¸ãã¬ã«ï¼ã®æ¾åºãéå§ã
-                            </p>
-                        </div>
+
+                <!-- åç´ã®è«ç¹æ¯è¼è¡¨ -->
+                <div class="bg-gray-50 rounded-lg p-5">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="layout-grid" class="w-5 h-5 text-gray-600"></i>
+                        <h3 class="font-bold text-gray-800">åç´ã®è«ç¹æ¯è¼</h3>
                     </div>
-                    
-                    <!-- Comparison Table -->
-                    <div class="bg-gray-50 rounded-xl p-5">
-                        <div class="flex items-center gap-2 mb-4">
-                            <i data-lucide="git-compare" class="w-5 h-5 text-gray-600"></i>
-                            <h3 class="font-bold text-gray-800">åç´ã®è«ç¹æ¯è¼</h3>
-                        </div>
-                        <div class="overflow-x-auto">
-                            <table class="w-full text-sm">
-                                <thead>
-                                    <tr class="border-b-2 border-gray-300">
-                                        <th class="text-left py-3 px-2 font-bold">è«ç¹</th>
-                                        <th class="text-left py-3 px-2 font-bold text-nikkei">
-                                            <span class="inline-flex items-center gap-1">
-                                                <span class="w-2 h-2 bg-nikkei rounded-full"></span>æ¥çµæ°è
-                                            </span>
-                                        </th>
-                                        <th class="text-left py-3 px-2 font-bold text-yomiuri">
-                                            <span class="inline-flex items-center gap-1">
-                                                <span class="w-2 h-2 bg-yomiuri rounded-full"></span>èª­å£²æ°è
-                                            </span>
-                                        </th>
-                                        <th class="text-left py-3 px-2 font-bold text-mainichi">
-                                            <span class="inline-flex items-center gap-1">
-                                                <span class="w-2 h-2 bg-mainichi rounded-full"></span>æ¯æ¥æ°è
-                                            </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="border-b border-gray-200">
-                                        <td class="py-3 px-2 font-medium">ä¸»ãªç¦ç¹</td>
-                                        <td class="py-3 px-2">çµæ¸ã»å¸å ´ã¸ã®å½±é¿ãã¨ãã«ã®ã¼å®å¨ä¿é</td>
-                                        <td class="py-3 px-2">å½éæ¿æ²»ã»å¤äº¤é¢ä¿ãG7ã®åå</td>
-                                        <td class="py-3 px-2">ç³æ²¹åèæ¾åºãå½æ°çæ´»ã¸ã®å½±é¿</td>
-                                    </tr>
-                                    <tr class="border-b border-gray-200">
-                                        <td class="py-3 px-2 font-medium">æ¥æ¬æ¿åºã¸ã®è©ä¾¡</td>
-                                        <td class="py-3 px-2">åèæ¾åºãè©ä¾¡ãä»£æ¿èª¿éã®èª²é¡ææ</td>
-                                        <td class="py-3 px-2">èæ¨å¤ç¸ã®ãæ©æ¸¡ãå½¹ããè©ä¾¡</td>
-                                        <td class="py-3 px-2">ç±³å½æ¹å¤ã®æ¬ å¦ãåé¡è¦</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-3 px-2 font-medium">ä»å¾ã®è¦éã</td>
-                                        <td class="py-3 px-2">åæ²¹å°çã¯6æã3æä¸æ¬ããä¾çµ¦ä¸è¶³æ¬æ ¼å</td>
-                                        <td class="py-3 px-2">G7ã®çµæç¶­æã¨ãèªè¡ã®èªç±ãç¢ºä¿ãéè¦</td>
-                                        <td class="py-3 px-2">é·æåã¸ã®æ¸å¿µãå¤äº¤çè§£æ±ºãè¨´æ±</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    
-                    <!-- Terminology -->
-                    <div class="mt-6 bg-slate-100 rounded-lg p-4">
-                        <div class="flex items-center gap-2 mb-2">
-                            <i data-lucide="book-open" class="w-4 h-4 text-slate-600"></i>
-                            <span class="font-bold text-slate-700 text-sm">ç¨èªè§£èª¬</span>
-                        </div>
-                        <ul class="text-xs text-slate-600 space-y-1">
-                            <li><span class="font-semibold">ãã«ã ãºæµ·å³¡</span>ï¼ãã«ã·ã£æ¹¾ã¨ãªãã¼ã³æ¹¾ãçµã¶å¹ç´34kmã®æµ·å³¡ãä¸çã®åæ²¹ä¾çµ¦ã®ç´2å²ãééããã¨ãã«ã®ã¼è¼¸éã®è¦è¡ã</li>
-                            <li><span class="font-semibold">å½å®¶åè</span>ï¼ç·æ¥æã«åãã¦æ¿åºãä¿æããç³æ²¹ãæ¥æ¬ã¯å½åæ¶è²»ç´180æ¥åãåèãã¦ããã</li>
-                            <li><span class="font-semibold">ãã©ã¼ã¹ã»ãã¸ã¥ã¼ã«ï¼ä¸å¯æåå®£è¨ï¼</span>ï¼å¤©ç½ã»æ¦äºç­ã®ä¸å¯æåã«ããå¥ç´å±¥è¡ãä¸å¯è½ãªå ´åãç¾©åãåé¤ãããæ³çå®£è¨ã</li>
-                        </ul>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="bg-gray-200">
+                                    <th class="px-4 py-3 text-left font-bold">è«ç¹</th>
+                                    <th class="px-4 py-3 text-left font-bold text-blue-700">æ¥çµæ°è</th>
+                                    <th class="px-4 py-3 text-left font-bold text-red-700">èª­å£²æ°è</th>
+                                    <th class="px-4 py-3 text-left font-bold text-green-700">æ¯æ¥æ°è</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3 font-medium">ä¸»ãªç¦ç¹</td>
+                                    <td class="px-4 py-3">çµæ¸ã»å¸å ´ã¸ã®å½±é¿ãæ¥æ¬ä¼æ¥­ã®ãªã¹ã¯</td>
+                                    <td class="px-4 py-3">G7å¤äº¤ãèæ¨å¤ç¸ã®æ©æ¸¡ãå½¹</td>
+                                    <td class="px-4 py-3">ç³æ²¹åèæ¾åºãå½æ°çæ´»ã¸ã®å½±é¿</td>
+                                </tr>
+                                <tr class="border-b bg-white">
+                                    <td class="px-4 py-3 font-medium">æ¥æ¬ã®å¯¾å¿è©ä¾¡</td>
+                                    <td class="px-4 py-3">äºåè²»8,600ååã§è²¡æºæ¸å¿µã¯å°ãã</td>
+                                    <td class="px-4 py-3">ç±³æ¬§éã®æ©æ¸¡ãã«èå¿</td>
+                                    <td class="px-4 py-3">å½å®¶åè30æ¥åæ¾åºãè©ä¾¡</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">ä»å¾ã®è¦éã</td>
+                                    <td class="px-4 py-3">æ¥é4æå©ä¸ãè¦³æ¸¬ãå¾é</td>
+                                    <td class="px-4 py-3">G7çµæã®ç¶­æãèª²é¡</td>
+                                    <td class="px-4 py-3">6æã¾ã§åæ²¹å°çå°é£</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- News Topic 2: G7 Foreign Ministers Meeting -->
-        <section class="mb-12">
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
-                <div class="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-4">
-                    <div class="flex items-center gap-3">
-                        <i data-lucide="globe" class="w-6 h-6 text-white"></i>
-                        <h2 class="text-xl md:text-2xl font-bold text-white">G7å¤ç¸ä¼åéå¹ ãã«ã ãºæµ·å³¡éèªåéãè¦è«</h2>
-                    </div>
-                    <p class="text-blue-100 mt-1 text-sm">ãå±éãã¼ããæ¥çµã»èª­å£²</p>
-                </div>
-                
-                <div class="p-6">
-                    <div class="grid md:grid-cols-2 gap-6 mb-8">
-                        <div class="bg-blue-50 rounded-xl p-5 border-l-4 border-blue-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="help-circle" class="w-5 h-5 text-blue-600"></i>
-                                <h3 class="font-bold text-blue-800">ä½ãèµ·ããã</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                ããªè¿éã§3æ26ã27æ¥ã«G7å¤ç¸ä¼åãéå¬ã
-                                å½åã¯å±åå£°æãåºããªãäºå®ã ã£ãããä¸è»¢ãã¦<span class="font-semibold">ãã«ã ãºæµ·å³¡ã®éèªåé</span>ãå¼ã³ãããå±åå£°æãçºè¡¨ã
-                                æ°éäººãã¤ã³ãã©ã¸ã®æ»æã®å³æåæ­¢ãè¦è«ããã
-                            </p>
+        <!-- ãããã¯2: ä»®æ³éè²¨è¦å¶å¼·å -->
+        <section class="bg-white rounded-xl shadow-lg mb-8 overflow-hidden">
+            <div class="bg-indigo-600 text-white px-6 py-4 flex items-center gap-3">
+                <i data-lucide="shield-check" class="w-6 h-6"></i>
+                <h2 class="text-xl font-bold">ãéèãä»®æ³éè²¨ã®ç¡ç»é²è²©å£²ãå³ç½°å</h2>
+                <span class="ml-auto bg-white/20 px-3 py-1 rounded-full text-sm">æ¥çµ</span>
+            </div>
+            
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-blue-50 rounded-lg p-5 border-l-4 border-blue-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-blue-600"></i>
+                            <h3 class="font-bold text-blue-800">ä½ãèµ·ããã</h3>
                         </div>
-                        
-                        <div class="bg-amber-50 rounded-xl p-5 border-l-4 border-amber-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="lightbulb" class="w-5 h-5 text-amber-600"></i>
-                                <h3 class="font-bold text-amber-800">ãªãèµ·ããã</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                ç±³å½ã¨æ¬§å·ã®éã§è»äºå¯¾å¿ã¸ã®æ¸©åº¦å·®ãå­å¨ã
-                                æ¬§å·è«¸å½ã¯ç±³è»ã¨ã®å³æè¦è¹æ´¾é£ã«æéå§¿å¢ãç¤ºãä¸æ¹ã
-                                ã¨ãã«ã®ã¼å±æ©ã®æ·±å»åãåãã¦ãä¸ä¸è´ã®ç®¡çãããæä½éã®çµæãç¤ºãå¿è¦æ§ãé«ã¾ã£ãã
-                            </p>
-                        </div>
-                        
-                        <div class="bg-green-50 rounded-xl p-5 border-l-4 border-green-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="users" class="w-5 h-5 text-green-600"></i>
-                                <h3 class="font-bold text-green-800">èª°ã«å½±é¿ãããã</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                G7åå½ï¼æ¥ç±³è±ä»ç¬ä¼å ï¼ã®å¤äº¤å§¿å¢ã«æ³¨ç®ã
-                                ç¹ã«èæ¨å¤ç¸ã¯<span class="font-semibold">ç±³æ¬§ã®ãæ©æ¸¡ãå½¹ã</span>ã¨ãã¦éãåãæã¤å ´é¢ãã
-                                ã¦ã¯ã©ã¤ãã®ã·ããå¤ç¸ãåå ããæ¯æ´ç¶ç¶ãç¢ºèªã
-                            </p>
-                        </div>
-                        
-                        <div class="bg-purple-50 rounded-xl p-5 border-l-4 border-purple-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="trending-up" class="w-5 h-5 text-purple-600"></i>
-                                <h3 class="font-bold text-purple-800">ãã¸ãã¹ã¸ã®å½±é¿</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                G7ã®é£æºå§¿å¢ã¯å¸å ´ã®å®å®åã«å¯ä¸ããå¯è½æ§ã
-                                ãããå·ä½çãªè»äºè¡åã®åæã«ã¯è³ã£ã¦ãããã
-                                æµ·éã»ã¨ãã«ã®ã¼ä¼æ¥­ã¯å¼ãç¶ãä¸éæãªç¶æ³ã§ã®çµå¶å¤æ­ãè¿«ãããã
-                            </p>
-                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            éèåºãæå·è³ç£ï¼ä»®æ³éè²¨ï¼ã®ç¡ç»é²è²©å£²ã«å¯¾ããç½°åãå¤§å¹ã«å¼·åããæ¹éãçºè¡¨ãæç¦åã3å¹´ä»¥ä¸ãã10å¹´ä»¥ä¸ã«ãç½°éã300ä¸åä»¥ä¸ãã1,000ä¸åä»¥ä¸ã«å¼ãä¸ããéèåååå¼æ³ï¼éåæ³ï¼æ ªå¼ãªã©ã®éèååãè¦å¶ããæ³å¾ï¼æ¹æ­£æ¡ãç¹å¥å½ä¼ã«æåºäºå®ã
+                        </p>
                     </div>
                     
-                    <div class="mt-6 bg-slate-100 rounded-lg p-4">
-                        <div class="flex items-center gap-2 mb-2">
-                            <i data-lucide="book-open" class="w-4 h-4 text-slate-600"></i>
-                            <span class="font-bold text-slate-700 text-sm">ç¨èªè§£èª¬</span>
+                    <div class="bg-yellow-50 rounded-lg p-5 border-l-4 border-yellow-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="lightbulb" class="w-5 h-5 text-yellow-600"></i>
+                            <h3 class="font-bold text-yellow-800">ãªãèµ·ããã</h3>
                         </div>
-                        <ul class="text-xs text-slate-600 space-y-1">
-                            <li><span class="font-semibold">G7ï¼ä¸»è¦7ãå½ï¼</span>ï¼æ¥æ¬ãç±³å½ãè±å½ããã©ã³ã¹ããã¤ããã¤ã¿ãªã¢ãã«ããã®åé²7ãå½ã«ããå½éåèª¿ã®æ çµã¿ã</li>
-                            <li><span class="font-semibold">èªè¡ã®èªç±</span>ï¼å½éæ³ä¸ããã¹ã¦ã®å½ã®è¹è¶ãå¬æµ·ãå½éæµ·å³¡ãèªç±ã«éèªã§ããæ¨©å©ã</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- News Topic 3: Anti-Trump Protests -->
-        <section class="mb-12">
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
-                <div class="bg-gradient-to-r from-slate-600 to-slate-800 px-6 py-4">
-                    <div class="flex items-center gap-3">
-                        <i data-lucide="megaphone" class="w-6 h-6 text-white"></i>
-                        <h2 class="text-xl md:text-2xl font-bold text-white">å¨ç±³åå°ã§åãã©ã³ããã¢ãNO KINGSã</h2>
-                    </div>
-                    <p class="text-slate-300 mt-1 text-sm">ãèª­å£²æ°èã</p>
-                </div>
-                
-                <div class="p-6">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="bg-blue-50 rounded-xl p-5 border-l-4 border-blue-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="help-circle" class="w-5 h-5 text-blue-600"></i>
-                                <h3 class="font-bold text-blue-800">ä½ãèµ·ããã</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                å¨ç±³åå°ã§ãNO KINGSï¼çæ§ã¯ãããªãï¼ããã¹ã­ã¼ã¬ã³ã¨ãã
-                                ãã©ã³ãæ¿æ¨©ã¸ã®æè­°ãã¢ãçºçã
-                                ãé®æããããæ²æ³ãè»½è¦ãããªããªã©ã®ãã©ã«ã¼ããæ²ãã
-                                ç§»æ°æçºæ¿ç­ãã¤ã©ã³æ»æãæ¹å¤ã
-                            </p>
-                        </div>
-                        
-                        <div class="bg-amber-50 rounded-xl p-5 border-l-4 border-amber-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="lightbulb" class="w-5 h-5 text-amber-600"></i>
-                                <h3 class="font-bold text-amber-800">ãªãèµ·ããã</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                ã¤ã©ã³æ»æã®é·æåã«ããä¸ä¿¡æã®æ¡å¤§ã
-                                ã¬ã½ãªã³ä¾¡æ ¼é«é¨°ï¼1ã¬ã­ã³ç´3.98ãã«ã«ä¸æï¼ã§
-                                ãã©ã³ãå¤§çµ±é ã®æ¯æçã36%ã«ä½ä¸ã
-                                ã¤ã©ã³æ»æã¸ã®ä¸æ¯æã¯61%ã«éãã¦ããã
-                            </p>
-                        </div>
-                        
-                        <div class="bg-green-50 rounded-xl p-5 border-l-4 border-green-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="users" class="w-5 h-5 text-green-600"></i>
-                                <h3 class="font-bold text-green-800">èª°ã«å½±é¿ãããã</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                ç±³å½ã®ä¸è¬å¸æ°ãç¹ã«ã¬ã½ãªã³ä¾¡æ ¼ä¸æã®å½±é¿ãåããå±¤ã
-                                æ°ä¸»åæ¯æèã®84%ãç±³å½çµæ¸ã¯ãå¼±ããã¨åç­ã
-                                ç¡åæ´¾å±¤ã®66%ãåæ§ã®è¦è§£ãç¤ºãã¦ããã
-                            </p>
-                        </div>
-                        
-                        <div class="bg-purple-50 rounded-xl p-5 border-l-4 border-purple-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="trending-up" class="w-5 h-5 text-purple-600"></i>
-                                <h3 class="font-bold text-purple-800">ãã¸ãã¹ã¸ã®å½±é¿</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                ãã©ã³ãæ¿æ¨©ã®æ¿ç­ç¶ç¶ã¸ã®ä¸éææãå¢å ã
-                                11æã®ä¸­éé¸æãæ§ããæ¿ç­ã®æ¥è»¢æãªã¹ã¯ãã
-                                ç±³å½ä¼æ¥­ã¯æ¿æ²»ãªã¹ã¯ãç¹ãè¾¼ãã çµå¶å¤æ­ãå¿è¦ã«ã
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- News Topic 4: 106ä¸åã®å£ -->
-        <section class="mb-12">
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
-                <div class="bg-gradient-to-r from-emerald-500 to-teal-600 px-6 py-4">
-                    <div class="flex items-center gap-3">
-                        <i data-lucide="wallet" class="w-6 h-6 text-white"></i>
-                        <h2 class="text-xl md:text-2xl font-bold text-white">ã106ä¸åã®å£ã3æ31æ¥ã§è§£æ¶ã¸</h2>
-                    </div>
-                    <p class="text-emerald-100 mt-1 text-sm">ãæ¥çµã»èª­å£²ã</p>
-                </div>
-                
-                <div class="p-6">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="bg-blue-50 rounded-xl p-5 border-l-4 border-blue-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="help-circle" class="w-5 h-5 text-blue-600"></i>
-                                <h3 class="font-bold text-blue-800">ä½ãèµ·ããã</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                åçå´åçã¯<span class="font-semibold">2026å¹´10æ</span>ããã©ã«ã
-                                ç¤¾ä¼ä¿éºå å¥ã®å¹´åè¦ä»¶ã106ä¸åã®å£ãï¼æé¡8.8ä¸åä»¥ä¸ï¼ãæ¤å»ããæ¹éã
-                                é±20æéä»¥ä¸åããã¼ãã»ã¢ã«ãã¤ãã¯å¹´åã«é¢ä¿ãªãåçå¹´éã«å å¥ãããã¨ã«ãªãã
-                            </p>
-                        </div>
-                        
-                        <div class="bg-amber-50 rounded-xl p-5 border-l-4 border-amber-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="lightbulb" class="w-5 h-5 text-amber-600"></i>
-                                <h3 class="font-bold text-amber-800">ãªãèµ·ããã</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                æä½è³éä¸æã«ãããé±20æéåãã¨106ä¸åãè¶ããã±ã¼ã¹ãå¢å ï¼è©²å½è213ä¸äººä»¥ä¸ï¼ã
-                                ãåãæ§ããã«ããäººæä¸è¶³è§£æ¶ã¨ã
-                                ç¤¾ä¼ä¿éºå¶åº¦ã®å¬å¹³åã»æç¶å¯è½æ§ç¢ºä¿ãç®çã
-                            </p>
-                        </div>
-                        
-                        <div class="bg-green-50 rounded-xl p-5 border-l-4 border-green-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="users" class="w-5 h-5 text-green-600"></i>
-                                <h3 class="font-bold text-green-800">èª°ã«å½±é¿ãããã</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                æ°ãã«<span class="font-semibold">ç´200ä¸äºº</span>ãåçå¹´éã®å å¥å¯¾è±¡ã«ã
-                                éå¶èã®æ¶é¤ã«å¥ã£ã¦ãããã¼ãå´åèã¯ã
-                                æ°ãã«ç¤¾ä¼ä¿éºæè² æãçºçãæåããæ¸å°ããå¯è½æ§ãã
-                            </p>
-                        </div>
-                        
-                        <div class="bg-purple-50 rounded-xl p-5 border-l-4 border-purple-500">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="trending-up" class="w-5 h-5 text-purple-600"></i>
-                                <h3 class="font-bold text-purple-800">ãã¸ãã¹ã¸ã®å½±é¿</h3>
-                            </div>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                ä¼æ¥­ã¯ç¤¾ä¼ä¿éºæã®äºæ¥­ä¸»è² æå¢å ï¼å´ä½¿æåï¼ã
-                                äººäºæå½èã®ç´54%ãæ¥­åè² æå¢å ãæ¸å¿µã
-                                æ¿åºã¯3å¹´éã®ä¿éºæè»½æ¸ç¹ä¾æªç½®ãå®æ½äºå®ã
-                                æ°ãã«ãé±20æéã®å£ããå½¢æãããå¯è½æ§ãææãããã
-                            </p>
-                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            ããµãã¨ãã¼ã¯ã³ãé¨åãç´æ¥ã®å¥æ©ãé«å¸æ©èé¦ç¸ã®åãå ããä»®æ³éè²¨ãç¡ç»é²ã§æµéããåå¤ã®ç´30åã«æ¥é¨°å¾ãé¦ç¸ãé¢ä¸ãå¦å®ããã¨1æéã§ç´58%æ¥è½ãæè³å®¶ã®æå¤±ã¯ç´20ååè¦æ¨¡ã¨è©¦ç®ãä»®æ³éè²¨ãæè³ç®çã§åå¼ãããå®æï¼åå¼åæ©ã®86.6%ãå¤ä¸ããæå¾ï¼ãè¸ã¾ããè¦å¶è¦ç´ãã
+                        </p>
                     </div>
                     
-                    <div class="mt-6 bg-slate-100 rounded-lg p-4">
-                        <div class="flex items-center gap-2 mb-2">
-                            <i data-lucide="book-open" class="w-4 h-4 text-slate-600"></i>
-                            <span class="font-bold text-slate-700 text-sm">ç¨èªè§£èª¬</span>
+                    <div class="bg-green-50 rounded-lg p-5 border-l-4 border-green-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="users" class="w-5 h-5 text-green-600"></i>
+                            <h3 class="font-bold text-green-800">èª°ã«å½±é¿ãããã</h3>
                         </div>
-                        <ul class="text-xs text-slate-600 space-y-1">
-                            <li><span class="font-semibold">106ä¸åã®å£</span>ï¼å¹´å106ä¸åï¼æé¡8.8ä¸åï¼ãè¶ããã¨ç¤¾ä¼ä¿éºã«å å¥ãä¿éºæãçºçãããããæåããæ¸å°ããç¾è±¡ããããé¿ããããã®ãåãæ§ãããåé¡è¦ããã¦ããã</li>
-                            <li><span class="font-semibold">130ä¸åã®å£</span>ï¼å¹´å130ä¸åãè¶ããã¨éå¶èã®ç¤¾ä¼ä¿éºã®æ¶é¤ããå¤ããåºæºããã¡ãã¯2026å¹´4æããèªå®ã«ã¼ã«ããå´åå¥ç´æ¸ãã¼ã¹ãã«å¤æ´ãããã</li>
-                            <li><span class="font-semibold">åçå¹´é</span>ï¼ä¼ç¤¾å¡ãå¬åå¡ãå å¥ããå¬çå¹´éãä¿éºæã¯å´ä½¿æåã§ãå°æ¥ã®å¹´éåçµ¦é¡ãå¢ããã¡ãªãããããã</li>
-                        </ul>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            <strong>åäººæè³å®¶ï¼</strong>æè³å®¶ä¿è­·ãå¼·åãããè©æ¬ºçãªä»®æ³éè²¨ã¸ã®è¢«å®³ãªã¹ã¯ãè»½æ¸ã<br>
+                            <strong>ä»®æ³éè²¨äº¤ææ¥­èï¼</strong>ã¤ã³ãµã¤ãã¼åå¼ï¼æªå¬è¡¨æå ±ãåºã«ããä¸æ­£åå¼ï¼è¦å¶ãéç¤ºç¾©åãé©ç¨ãç¡ç»é²æ¥­èã¯åäºç½°ã®ãªã¹ã¯å¢å¤§ã
+                        </p>
+                    </div>
+                    
+                    <div class="bg-purple-50 rounded-lg p-5 border-l-4 border-purple-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="briefcase" class="w-5 h-5 text-purple-600"></i>
+                            <h3 class="font-bold text-purple-800">ãã¸ãã¹ã¸ã®å½±é¿</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            ä»®æ³éè²¨ããæ±ºæ¸ææ®µããããæè³ååãã¸æ³çä½ç½®ã¥ããè»¢æãéè¡ãªã©éèæ©é¢ãæè³ç®çã§ä»®æ³éè²¨ãä¿æãããã¨ãå¯è½ã«ãè¨¼å¸åå¼ç­ç£è¦å§å¡ä¼ï¼è¨¼å¸ç£è¦å§ï¼éèå¸å ´ã®ä¸æ­£ãç£è¦ããæ©é¢ï¼ã«ããç¯åèª¿æ»ãå¯è½ã¨ãªããåç· ãè½åãæ ¹æ¬çã«å¼·åã2028å¹´1ææ½è¡è¦è¾¼ã¿ã
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ç¨èªè§£èª¬ -->
+                <div class="bg-amber-50 rounded-lg p-4 border border-amber-200">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i data-lucide="book-open" class="w-5 h-5 text-amber-600"></i>
+                        <span class="font-bold text-amber-800 text-sm">ç¨èªè§£èª¬</span>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div><span class="font-medium">æå·è³ç£ï¼ä»®æ³éè²¨ï¼ï¼</span>ãã­ãã¯ãã§ã¼ã³æè¡ãåºç¤ã¨ãããã¸ã¿ã«ä¸ã®ä¾¡å¤è¨é²ã»ç§»è»¢ææ®µ</div>
+                        <div><span class="font-medium">éåæ³ï¼</span>æ ªå¼ã»æè³ä¿¡è¨ãªã©éèååã®åå¼ãè¦å¶ããæ³å¾</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- News Topic 5: Other News -->
-        <section class="mb-12">
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
-                <div class="bg-gradient-to-r from-violet-500 to-purple-600 px-6 py-4">
-                    <div class="flex items-center gap-3
+        <!-- ãããã¯3: æ±äº¬23åºãã³ã·ã§ã³ä¾¡æ ¼ -->
+        <section class="bg-white rounded-xl shadow-lg mb-8 overflow-hidden">
+            <div class="bg-teal-600 text-white px-6 py-4 flex items-center gap-3">
+                <i data-lucide="building" class="w-6 h-6"></i>
+                <h2 class="text-xl font-bold">ãä¸åç£ãæ±äº¬23åºãã³ã·ã§ã³ãä¸­å¤®å¤ã1ååè¶ã</h2>
+                <span class="ml-auto bg-white/20 px-3 py-1 rounded-full text-sm">æ¥çµ</span>
+            </div>
+            
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-blue-50 rounded-lg p-5 border-l-4 border-blue-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-blue-600"></i>
+                            <h3 class="font-bold text-blue-800">ä½ãèµ·ããã</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            æ±äº¬23åºã®ãã³ã·ã§ã³ä¾¡æ ¼ãä¸­å¤®å¤ï¼ãã¼ã¿ãä¸¦ã¹ãæã®çãä¸­ã®å¤ï¼ã§ã1ååãè¶ããæ°´æºã«ããé«é¨°ã¯ä¸é¨ã®é«ç´ç©ä»¶ã ããã¨ããèªè­ãéå»ã®ãã®ã«ã2024å¹´ã®é½åºé¨å¹³åã¯6,656ä¸åï¼åå¹´æ¯+8.7%ï¼ã
+                        </p>
+                    </div>
+                    
+                    <div class="bg-yellow-50 rounded-lg p-5 border-l-4 border-yellow-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="lightbulb" class="w-5 h-5 text-yellow-600"></i>
+                            <h3 class="font-bold text-yellow-800">ãªãèµ·ããã</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            å»ºç¯è³æä¾¡æ ¼ã»å´åè²»ã®é«é¨°ãåå®ã«ããæµ·å¤æè³å®¶ã®åå¥å¢å ãä¸»å ãæ°ç¯ãã³ã·ã§ã³ã®ä¾çµ¦æ¸å°ï¼ç¨å°åå¾é£ï¼ã§å¸å°æ§ãä¸æãä½éå©ç°å¢ãä½å®è³¼å¥éè¦ãä¸æ¯ãã
+                        </p>
+                    </div>
+                    
+                    <div class="bg-green-50 rounded-lg p-5 border-l-4 border-green-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="users" class="w-5 h-5 text-green-600"></i>
+                            <h3 class="font-bold text-green-800">èª°ã«å½±é¿ãããã</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            <strong>ä½å®è³¼å¥å¸æèï¼</strong>ç¹ã«è¥å¹´å±¤ã»ä¸­éæå¾å±¤ã«ã¨ã£ã¦é½å¿ã®ãã³ã·ã§ã³åå¾ãããå°é£ã«ã<br>
+                            <strong>ä¸åç£æè³å®¶ï¼</strong>æ¸¯åºãªã©ä¸é¨é«ä¾¡æ ¼å¸¯ã¨ãªã¢ã§ã¯ãå£²ãã«ããç¶æããé¡å¨åã
+                        </p>
+                    </div>
+                    
+                    <div class="bg-purple-50 rounded-lg p-5 border-l-4 border-purple-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="briefcase" class="w-5 h-5 text-purple-600"></i>
+                            <h3 class="font-bold text-purple-800">ãã¸ãã¹ã¸ã®å½±é¿</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            æ¥éã®æ¿ç­éå©å¼ãä¸ãï¼2026å¹´1æã«0.75%ã¸ï¼ã«ãããä»å¾ã®ä½å®ã­ã¼ã³éå©ä¸æã»éè¦æ¸å°ã®ãªã¹ã¯ããã ãé½å¿5åºã¯ãä¾¡æ ¼ãä¸ããã«å£²ããç¶æ³ããç¶ç¶ãã2025å¹´åé¡ãï¼å£å¡ä¸ä»£ã®ç¸ç¶å¢ã»å°å­åï¼ã®å½±é¿ã¯ç·©ãããªèª¿æ´ã«ã¨ã©ã¾ãè¦è¾¼ã¿ã
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ãããã¯4: è¾ºéå¤æ²è»¢è¦äºæ -->
+        <section class="bg-white rounded-xl shadow-lg mb-8 overflow-hidden">
+            <div class="bg-gray-700 text-white px-6 py-4 flex items-center gap-3">
+                <i data-lucide="anchor" class="w-6 h-6"></i>
+                <h2 class="text-xl font-bold">ãç¤¾ä¼ãè¾ºéå¤æ²ã§è¹2é»è»¢è¦ã2äººæ­»äº¡</h2>
+                <span class="ml-auto bg-white/20 px-3 py-1 rounded-full text-sm">å±éãã¼ã</span>
+            </div>
+            
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-blue-50 rounded-lg p-5 border-l-4 border-blue-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-blue-600"></i>
+                            <h3 class="font-bold text-blue-800">ä½ãèµ·ããã</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            3æ16æ¥ãæ²ç¸çåè­·å¸è¾ºéå¤æ²ã§å¹³åå­¦ç¿ä¸­ã®åå¿ç¤¾å½éé«æ ¡ï¼äº¬é½åºï¼2å¹´çãä¹ããè¹2é»ãè»¢è¦ãå¥³å­çå¾ï¼17ï¼ã¨è¹é·ï¼71ï¼ãæ­»äº¡ã16äººãè² å·ãæ¨ªæ³¢ãåãããã¨ãè»¢è¦åå ã¨ã¿ããããç¬¬11ç®¡åºæµ·ä¸ä¿å®æ¬é¨ãæ¥­åä¸éå¤±è´æ­»å·å®¹çã§ææ»ã
+                        </p>
+                    </div>
+                    
+                    <div class="bg-yellow-50 rounded-lg p-5 border-l-4 border-yellow-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="lightbulb" class="w-5 h-5 text-yellow-600"></i>
+                            <h3 class="font-bold text-yellow-800">ãªãèµ·ããã</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            éèªå£ä½ãããªåºå°åå¯¾åè­°ä¼ããåºèªåºæºãææåãã¦ããªãã£ããã¨ãå¤æãå¼çæå¡ãä½èª¿ä¸è¯ã§åä¹ãæ­å¿µããçå¾18äººã®ã¿ã§è¹ã«ä¹ãçµæã«ã2é»ã¯äºæ¥­ç»é²ããã¦ããªãã£ãã
+                        </p>
+                    </div>
+                    
+                    <div class="bg-green-50 rounded-lg p-5 border-l-4 border-green-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="users" class="w-5 h-5 text-green-600"></i>
+                            <h3 class="font-bold text-green-800">èª°ã«å½±é¿ãããã</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            <strong>éºæã»è² å·ããçå¾ï¼</strong>åå¿ç¤¾å½éé«æ ¡ã¯ä¿è­·èèª¬æä¼ãéå¬ãè¬ç½ªã<br>
+                            <strong>å­¦æ ¡ã»æè²æ©é¢ï¼</strong>ä¿®å­¦æè¡ã»æ ¡å¤å­¦ç¿ã®å®å¨ç®¡çä½å¶ã®è¦ç´ããèª²é¡ã«ã<br>
+                            <strong>éèªå£ä½ï¼</strong>æµ·ä¿ã«ããå®¶å®æç´¢ãæ³çè²¬ä»»ã®è¿½åã
+                        </p>
+                    </div>
+                    
+                    <div class="bg-purple-50 rounded-lg p-5 border-l-4 border-purple-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="briefcase" class="w-5 h-5 text-purple-600"></i>
+                            <h3 class="font-bold text-purple-800">ãã¸ãã¹ã¸ã®å½±é¿</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            æè²æè¡ãæ±ãæè¡ç¤¾ã®å®å¨ç®¡çè²¬ä»»ãåããããä½é¨å­¦ç¿ãã­ã°ã©ã ãæä¾ããå£ä½ã»äºæ¥­èã¸ã®è¦å¶å¼·åã®è­°è«ãé«ã¾ãå¯è½æ§ãæµ·ä¸ééæ³ã«ãããéæå®¢è¹ã®å®å¨åºæºã®è¦ç´ããæ¤è¨èª²é¡ã«ã
+                        </p>
+                    </div>
+                </div>
+
+                <!-- åç´ã®è«ç¹æ¯è¼è¡¨ -->
+                <div class="bg-gray-50 rounded-lg p-5">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="layout-grid" class="w-5 h-5 text-gray-600"></i>
+                        <h3 class="font-bold text-gray-800">åç´ã®è«ç¹æ¯è¼</h3>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="bg-gray-200">
+                                    <th class="px-4 py-3 text-left font-bold">è«ç¹</th>
+                                    <th class="px-4 py-3 text-left font-bold text-blue-700">æ¥çµæ°è</th>
+                                    <th class="px-4 py-3 text-left font-bold text-red-700">èª­å£²æ°è</th>
+                                    <th class="px-4 py-3 text-left font-bold text-green-700">æ¯æ¥æ°è</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b">
+                                    <td class="px-4 py-3 font-medium">å ±éã®ç¦ç¹</td>
+                                    <td class="px-4 py-3">åºèªåºæºã®ææåæ¬ å¦ãææ»ç¶æ³</td>
+                                    <td class="px-4 py-3">å¼çæå¡ä¸å¨ã®çµç·¯ãä¿è­·èã®æ¹å¤</td>
+                                    <td class="px-4 py-3">éèªå£ä½ã®å¯¾å¿ãäºæ¥­ç»é²åé¡</td>
+                                </tr>
+                                <tr class="border-b bg-white">
+                                    <td class="px-4 py-3 font-medium">å­¦æ ¡å´ã®è²¬ä»»</td>
+                                    <td class="px-4 py-3">å¯¾å¿æ¤è¨¼ã¸ãè¬ç½ªãå ±é</td>
+                                    <td class="px-4 py-3">ãå¼çè²¬ä»»æ¾æ£ãã¨ã®æ¹å¤ãç´¹ä»</td>
+                                    <td class="px-4 py-3">å¹³åå­¦ç¿ã®çµç·¯ãè©³å ±</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ãããã¯5: åãã©ã³ããã¢ -->
+        <section class="bg-white rounded-xl shadow-lg mb-8 overflow-hidden">
+            <div class="bg-orange-600 text-white px-6 py-4 flex items-center gap-3">
+                <i data-lucide="megaphone" class="w-6 h-6"></i>
+                <h2 class="text-xl font-bold">ãå½éãå¨ç±³åå°ã§ãã©ã³ãæ¿æ¨©ã«æè­°ãã¢</h2>
+                <span class="ml-auto bg-white/20 px-3 py-1 rounded-full text-sm">èª­å£²</span>
+            </div>
+            
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-blue-50 rounded-lg p-5 border-l-4 border-blue-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-blue-600"></i>
+                            <h3 class="font-bold text-blue-800">ä½ãèµ·ããã</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            å¨ç±³åå°ã§ãNO KINGSï¼çæ§ãããªãï¼ããé®æããããªã©ã®ã¹ã­ã¼ã¬ã³ãæ²ããåãã©ã³ããã¢ãçºçãç§»æ°æçºã¨ã¤ã©ã³æ»æã¸ã®æ¹å¤ãé«ã¾ãããã©ã³ãæ°ã®æ¯æçãä½ä¸ãå¯¾ã¤ã©ã³æ¦é·æåã§ä¸ä¿¡ãæ¡å¤§ã
+                        </p>
+                    </div>
+                    
+                    <div class="bg-yellow-50 rounded-lg p-5 border-l-4 border-yellow-500">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="light
